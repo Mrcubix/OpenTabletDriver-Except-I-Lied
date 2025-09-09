@@ -16,7 +16,7 @@ namespace OpenTabletDriver.UX.Controls.Generic
         protected StackLayout layout = new StackLayout
         {
             HorizontalContentAlignment = HorizontalAlignment.Stretch,
-            Spacing = 5
+            Spacing = 7
         };
 
         private IList<T> itemSource;

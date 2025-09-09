@@ -23,7 +23,7 @@ namespace OpenTabletDriver.UX.Controls.Generic
 
         private const Orientation DEFAULT_ORIENTATION = Orientation.Vertical;
 
-        protected virtual Padding ContentPadding => DesktopInterop.CurrentPlatform == PluginPlatform.Windows ? new Padding(5, 10, 5, 5) : new Padding(5);
+        protected virtual Padding ContentPadding => DesktopInterop.CurrentPlatform == PluginPlatform.Windows ? new Padding(5, 3, 5, 5) : new Padding(5);
 
         protected virtual Color HorizontalBackgroundColor => SystemColors.ControlBackground;
         protected virtual Color VerticalBackgroundColor => SystemColors.WindowBackground;

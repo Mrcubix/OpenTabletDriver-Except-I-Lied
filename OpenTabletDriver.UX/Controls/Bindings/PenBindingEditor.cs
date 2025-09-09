@@ -31,7 +31,7 @@ namespace OpenTabletDriver.UX.Controls.Bindings
                                             Content = new StackLayout
                                             {
                                                 HorizontalContentAlignment = HorizontalAlignment.Stretch,
-                                                Spacing = 5,
+                                                Spacing = 7,
                                                 Items =
                                                 {
                                                     new Group
@@ -57,7 +57,7 @@ namespace OpenTabletDriver.UX.Controls.Bindings
                                             Content = new StackLayout
                                             {
                                                 HorizontalContentAlignment = HorizontalAlignment.Stretch,
-                                                Spacing = 5,
+                                                Spacing = 7,
                                                 Items =
                                                 {
                                                     new Group
