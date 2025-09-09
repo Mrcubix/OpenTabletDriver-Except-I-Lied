@@ -113,6 +113,7 @@
 | Wacom CTL-690                 |     Supported     |
 | Wacom DTC-133                 |     Supported     |
 | Wacom DTK-1660                |     Supported     |
+| Wacom DTK-2100                |     Supported     |
 | Wacom ET-0405-U               |     Supported     |
 | Wacom ET-0405A-U              |     Supported     |
 | Wacom FT-0405-U               |     Supported     |
@@ -137,15 +138,18 @@
 | XP-Pen Artist 13 (2nd Gen)    |     Supported     |
 | XP-Pen Artist 13.3            |     Supported     |
 | XP-Pen Artist 15.6            |     Supported     |
+| XP-Pen Artist 15.6 Pro V2     |     Supported     |
 | XP-Pen Artist 16 (2nd Gen)    |     Supported     |
 | XP-Pen Artist 22 (2nd Gen)    |     Supported     |
 | XP-Pen Artist 24              |     Supported     |
 | XP-Pen Artist Pro 14 (Gen2)   |     Supported     |
 | XP-Pen Artist Pro 16 (Gen2)   |     Supported     |
+| XP-Pen Artist Pro 24 (Gen2)   |     Supported     |
 | XP-Pen Deco 01                |     Supported     |
 | XP-Pen Deco 01 V2             |     Supported     |
 | XP-Pen Deco 01 V2 (Variant 2) |     Supported     |
 | XP-Pen Deco 01 V3             |     Supported     |
+| XP-Pen Deco 01 V3 (Variant 2) |     Supported     |
 | XP-Pen Deco 640 (IT640)       |     Supported     |
 | XP-Pen Deco Fun L (CT1060)    |     Supported     |
 | XP-Pen Deco Fun S (CT640)     |     Supported     |
@@ -181,7 +185,7 @@
 | Huion H580X                   |    Has Quirks     | User may have to replug their tablet until it is detected.
 | Huion H690                    |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed on interface 0
 | Huion New 1060 Plus (2048)    |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed on interface 1
-| Huion osu! Tablet             |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed on interface 0
+| Huion osu! Tablet             |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed on interface 0. Uses the same configuration as the Huion 420.
 | Huion WH1409 V2 (Variant 2)   |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed on interface 0
 | KENTING K5540                 |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed
 | Monoprice 10594               |    Has Quirks     | Windows: Requires Zadig's WinUSB to be installed on interface 0
@@ -252,6 +256,7 @@
 | Wacom CTL-6100WL              |  Missing Features | Wireless is not yet supported.
 | Wacom DTH-1320                |  Missing Features | Touch is not yet supported.
 | Wacom DTH-135                 |  Missing Features | Touch is not yet supported.
+| Wacom DTH-227                 |  Missing Features | Touch is not yet supported.
 | Wacom DTH-271                 |  Missing Features | Aux buttons are not yet supported.
 | Wacom DTK-1300                |  Missing Features | Center button is not yet supported.
 | Wacom DTK-2200                |  Missing Features | Touch Strips are not yet supported.
@@ -290,6 +295,7 @@
 | XP-Pen Artist 16 Pro          |  Missing Features | Wheel is not yet supported.
 | XP-Pen Artist 24 Pro          |  Missing Features | Wheel is not yet supported.
 | XP-Pen Artist Pro 16TP        |  Missing Features | Touch is not yet supported.
+| XP-Pen Artist Pro 19 (Gen2)   |  Missing Features | Scroll Wheel on Pen is not yet supported
 | XP-Pen Deco 02                |  Missing Features | Wheel is not yet supported.
 | XP-Pen Deco 03                |  Missing Features | Wheel is not yet supported.
 | XP-Pen Deco Pro Medium        |  Missing Features | Tilt and wheel are not yet supported.
