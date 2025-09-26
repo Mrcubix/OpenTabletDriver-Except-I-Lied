@@ -2,11 +2,11 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using OpenTabletDriver.Plugin.Tablet;
 
-namespace OpenTabletDriver.Configurations.Parsers.Wacom.Bamboo
+namespace OpenTabletDriver.Configurations.Parsers.Wacom.Graphire
 {
-    public struct BambooTabletReport : ITabletReport, IAuxReport, IEraserReport, IProximityReport
+    public struct GraphireTabletReport : ITabletReport, IAuxReport, IEraserReport, IProximityReport
     {
-        public BambooTabletReport(byte[] report)
+        public GraphireTabletReport(byte[] report)
         {
             Raw = report;
 
@@ -25,16 +25,17 @@ namespace OpenTabletDriver.Configurations.Parsers.Wacom.Bamboo
                 report[1].IsBitSet(2)
             };
 
+            var auxByte = report[7];
             AuxButtons = new bool[]
             {
-                report[7].IsBitSet(3),
-                report[7].IsBitSet(4),
-                report[7].IsBitSet(5),
-                report[7].IsBitSet(6),
+                auxByte.IsBitSet(6),
+                auxByte.IsBitSet(7),
             };
 
-            HoverDistance = 0;
+            // wheel = report[7][5:3]
+
             NearProximity = report[1].IsBitSet(7);
+            HoverDistance = 0;
         }
 
         public byte[] Raw { set; get; }
@@ -43,7 +44,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Wacom.Bamboo
         public bool[] PenButtons { set; get; }
         public bool[] AuxButtons { set; get; }
         public bool Eraser { set; get; }
-        public uint HoverDistance { set; get; }
-        public bool NearProximity { set; get; }
+        public bool NearProximity { get; set; }
+        public uint HoverDistance { get; set; }
     }
 }
