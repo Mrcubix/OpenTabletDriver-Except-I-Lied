@@ -12,7 +12,7 @@ namespace OpenTabletDriver.Desktop
 
     public class AppInfo
     {
-        private readonly static Version version = new(Assembly.GetEntryAssembly()!.GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion);
+        private readonly static string version = new(Assembly.GetEntryAssembly()!.GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion);
 
         private string? configurationDirectory,
             settingsFile,
@@ -70,7 +70,7 @@ namespace OpenTabletDriver.Desktop
 
         public static PresetManager PresetManager { set; get; } = new PresetManager();
 
-        public required Version Version { set; get; }
+        public required string Version { set; get; }
 
         public required string AppDataDirectory { set; get; }
 
