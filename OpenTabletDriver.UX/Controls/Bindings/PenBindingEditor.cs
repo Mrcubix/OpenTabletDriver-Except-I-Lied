@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using Eto.Forms;
 using OpenTabletDriver.Desktop.Reflection;
+using OpenTabletDriver.Interop;
+using OpenTabletDriver.Plugin;
 using OpenTabletDriver.UX.Controls.Generic;
 
 namespace OpenTabletDriver.UX.Controls.Bindings
@@ -31,7 +33,7 @@ namespace OpenTabletDriver.UX.Controls.Bindings
                                             Content = new StackLayout
                                             {
                                                 HorizontalContentAlignment = HorizontalAlignment.Stretch,
-                                                Spacing = 5,
+                                                Spacing = spacing,
                                                 Items =
                                                 {
                                                     new Group
@@ -57,7 +59,7 @@ namespace OpenTabletDriver.UX.Controls.Bindings
                                             Content = new StackLayout
                                             {
                                                 HorizontalContentAlignment = HorizontalAlignment.Stretch,
-                                                Spacing = 5,
+                                                Spacing = spacing,
                                                 Items =
                                                 {
                                                     new Group
@@ -128,5 +130,7 @@ namespace OpenTabletDriver.UX.Controls.Bindings
         private FloatSlider tipThreshold, eraserThreshold;
         private CheckBox disablePressure, disableTilt;
         private BindingDisplayList penButtons;
+
+        private readonly int spacing = SystemInterop.CurrentPlatform == PluginPlatform.Windows ? 7 : 5;
     }
 }

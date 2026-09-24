@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using Eto.Forms;
+using OpenTabletDriver.Interop;
 using OpenTabletDriver.Plugin;
 
 namespace OpenTabletDriver.UX.Controls.Generic
@@ -16,7 +17,7 @@ namespace OpenTabletDriver.UX.Controls.Generic
         protected StackLayout layout = new StackLayout
         {
             HorizontalContentAlignment = HorizontalAlignment.Stretch,
-            Spacing = 5
+            Spacing = SystemInterop.CurrentPlatform == PluginPlatform.Windows ? 7 : 5
         };
 
         private IList<T> itemSource;
